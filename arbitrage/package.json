@@ -1,0 +1,21 @@
+{
+  "name": "arbitrage-monitor",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build && npm run serve:static",
+    "build": "vite build",
+    "preview": "npm run build && npm run serve:static",
+    "serve": "cd .. && ARBITRAGE_API_HOST=${ARBITRAGE_API_HOST:-0.0.0.0} python -m arbitrage.api_server",
+    "serve:static": "cd .. && ARBITRAGE_API_HOST=${ARBITRAGE_API_HOST:-0.0.0.0} ARBITRAGE_API_STATIC_DIR=arbitrage/dist python -m arbitrage.api_server"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.10.2",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "vite": "^8.0.14"
+  }
+}

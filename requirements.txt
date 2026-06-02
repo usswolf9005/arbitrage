@@ -1,0 +1,5 @@
+# 백엔드(arbitrage 패키지)는 Python 표준 라이브러리만 사용합니다.
+# 외부 런타임 의존성 없음 (http.server, sqlite3 등 표준 모듈).
+
+# 테스트
+pytest>=7.0

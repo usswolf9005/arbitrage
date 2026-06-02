@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "providers": [
+    {
+      "provider_key": "dexscreener",
+      "display_name": "DEX Screener",
+      "kind": "dex",
+      "capabilities": ["dex_pool", "dex_pool_price", "dex_pair_search"],
+      "auth_type": "public",
+      "required_env": [],
+      "priority": 90,
+      "enabled_by_default": true,
+      "docs_url": "https://docs.dexscreener.com/api/reference"
+    },
+    {
+      "provider_key": "defillama",
+      "display_name": "DefiLlama",
+      "kind": "fx",
+      "capabilities": ["fx_rate", "coin_price"],
+      "auth_type": "public",
+      "required_env": [],
+      "priority": 70,
+      "enabled_by_default": true,
+      "docs_url": "https://defillama.com/docs/api"
+    },
+    {
+      "provider_key": "coingecko",
+      "display_name": "CoinGecko",
+      "kind": "coin_price",
+      "capabilities": ["coin_price"],
+      "auth_type": "api_key",
+      "required_env": ["COINGECKO_API_KEY"],
+      "priority": 80,
+      "enabled_by_default": true,
+      "docs_url": "https://docs.coingecko.com/reference/introduction"
+    },
+    {
+      "provider_key": "coinmarketcap",
+      "display_name": "CoinMarketCap",
+      "kind": "coin_price",
+      "capabilities": ["coin_price"],
+      "auth_type": "api_key",
+      "required_env": ["COINMARKETCAP_API_KEY"],
+      "priority": 75,
+      "enabled_by_default": true,
+      "docs_url": "https://coinmarketcap.com/api/documentation/v1/"
+    },
+    {
+      "provider_key": "alchemy",
+      "display_name": "Alchemy",
+      "kind": "rpc",
+      "capabilities": ["rpc_freshness", "rpc_block_freshness"],
+      "auth_type": "api_key",
+      "required_env": ["ALCHEMY_API_KEY"],
+      "priority": 85,
+      "enabled_by_default": true,
+      "docs_url": "https://docs.alchemy.com/"
+    },
+    {
+      "provider_key": "etherscan",
+      "display_name": "Etherscan",
+      "kind": "explorer",
+      "capabilities": ["explorer_history"],
+      "auth_type": "api_key",
+      "required_env": ["ETHERSCAN_API_KEY"],
+      "priority": 70,
+      "enabled_by_default": true,
+      "docs_url": "https://docs.etherscan.io/"
+    },
+    {
+      "provider_key": "upbit_public",
+      "display_name": "Upbit Public",
+      "kind": "cex",
+      "capabilities": ["cex_orderbook", "krw_orderbook", "fx_rate"],
+      "auth_type": "public",
+      "required_env": [],
+      "priority": 95,
+      "enabled_by_default": true,
+      "docs_url": "https://docs.upbit.com/kr/reference"
+    },
+    {
+      "provider_key": "bithumb_public",
+      "display_name": "Bithumb Public",
+      "kind": "cex",
+      "capabilities": ["cex_orderbook", "krw_orderbook", "fx_rate"],
+      "auth_type": "public",
+      "required_env": [],
+      "priority": 92,
+      "enabled_by_default": true,
+      "docs_url": "https://apidocs.bithumb.com/"
+    },
+    {
+      "provider_key": "binance_public",
+      "display_name": "Binance Public",
+      "kind": "cex",
+      "capabilities": ["cex_orderbook"],
+      "auth_type": "public",
+      "required_env": [],
+      "priority": 88,
+      "enabled_by_default": true,
+      "docs_url": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api"
+    },
+    {
+      "provider_key": "okx_public",
+      "display_name": "OKX Public",
+      "kind": "cex",
+      "capabilities": ["cex_orderbook"],
+      "auth_type": "public",
+      "required_env": [],
+      "priority": 86,
+      "enabled_by_default": true,
+      "docs_url": "https://www.okx.com/docs-v5/en/"
+    },
+    {
+      "provider_key": "bybit_public",
+      "display_name": "Bybit Public",
+      "kind": "cex",
+      "capabilities": ["cex_orderbook"],
+      "auth_type": "public",
+      "required_env": [],
+      "priority": 84,
+      "enabled_by_default": true,
+      "docs_url": "https://bybit-exchange.github.io/docs/v5/intro"
+    },
+    {
+      "provider_key": "zerox",
+      "display_name": "0x",
+      "kind": "swap",
+      "capabilities": ["swap_quote", "swap_build_tx"],
+      "auth_type": "api_key",
+      "required_env": ["ZEROX_API_KEY"],
+      "priority": 80,
+      "enabled_by_default": true,
+      "docs_url": "https://0x.org/docs/"
+    },
+    {
+      "provider_key": "kyberswap",
+      "display_name": "KyberSwap",
+      "kind": "swap",
+      "capabilities": ["swap_quote", "swap_build_tx"],
+      "auth_type": "api_key",
+      "required_env": ["KYBERSWAP_API_KEY"],
+      "priority": 76,
+      "enabled_by_default": true,
+      "docs_url": "https://docs.kyberswap.com/"
+    },
+    {
+      "provider_key": "lifi",
+      "display_name": "LI.FI",
+      "kind": "bridge",
+      "capabilities": ["swap_quote", "bridge_quote", "bridge_build_tx"],
+      "auth_type": "public",
+      "required_env": [],
+      "priority": 78,
+      "enabled_by_default": true,
+      "docs_url": "https://docs.li.fi/"
+    },
+    {
+      "provider_key": "goplus",
+      "display_name": "GoPlus",
+      "kind": "risk",
+      "capabilities": ["risk_check"],
+      "auth_type": "public",
+      "required_env": [],
+      "priority": 82,
+      "enabled_by_default": true,
+      "docs_url": "https://docs.gopluslabs.io/"
+    },
+    {
+      "provider_key": "tenderly",
+      "display_name": "Tenderly",
+      "kind": "risk",
+      "capabilities": ["risk_check", "rpc_freshness", "rpc_block_freshness"],
+      "auth_type": "api_key",
+      "required_env": ["TENDERLY_API_KEY", "TENDERLY_ACCOUNT_SLUG", "TENDERLY_PROJECT_SLUG"],
+      "priority": 74,
+      "enabled_by_default": true,
+      "docs_url": "https://docs.tenderly.co/"
+    }
+  ]
+}
